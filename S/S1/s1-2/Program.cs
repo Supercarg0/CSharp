@@ -8,31 +8,31 @@ Console.WriteLine("Введите число дня недели: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num == 1)
 {
-    Console.WriteLine(num + " -> Понедельник");
+    Console.WriteLine($"{num} -> Понедельник");
 }
 if (num == 2)
 {
-    Console.WriteLine(num + " -> Вторник");
+    Console.WriteLine($"{num} -> Вторник");
 }
 if (num == 3)
 {
-    Console.WriteLine(num + " -> Среда");
+    Console.WriteLine($"{num} -> Среда");
 }
 if (num == 4)
 {
-    Console.WriteLine(num + " -> Четверг");
+    Console.WriteLine($"{num} -> Четверг");
 }
 if (num == 5)
 {
-    Console.WriteLine(num + " -> Пятница");
+    Console.WriteLine($"{num} -> Пятница");
 }
 if (num == 6)
 {
-    Console.WriteLine(num + " -> Суббота");
+    Console.WriteLine($"{num} -> Суббота");
 }
 if (num == 7)
 {
-    Console.WriteLine(num + " -> Воскресенье");
+    Console.WriteLine($"{num} -> Воскресенье");
 }
 if (num > 7)
 {

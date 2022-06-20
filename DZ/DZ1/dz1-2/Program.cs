@@ -1,30 +1,25 @@
 ﻿/*
-2: Напишите программу, которая принимает на
-вход три числа и выдаёт максимальное из этих чисел.
-2, 3, 7 -> 7
-44 5 78 -> 78
-22 3 9 -> 22
+ДЗ/1-2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а
+какое меньшее.
+a = 5; b = 7 -> max = 7
+a = 2 b = 10 -> max = 10
+a = -9 b = -3 -> max = -3
 */
 
 Console.WriteLine("Введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите третье число: ");
-int num3 = Convert.ToInt32(Console.ReadLine());
 
-int max = num1;
-if (num2 > max)
+if (num1 > num2)
 {
-    max = num2;
+    Console.WriteLine($"a = {num1}; b = {num2} -> max = {num1}");
 }
-if (num3 > max)
+if (num2 > num1)
 {
-    max = num3;
+    Console.WriteLine($"a = {num1}; b = {num2} -> max = {num2}");
 }
-Console.WriteLine(num1 + ", " + num2 + ", " + num3 + " -> " + max);
-
-if (num1 == num2 && num2 == num3)
+else
 {
-    Console.WriteLine("Эти три числа равны между собой.");
+    Console.WriteLine("Эти числа являются равными.");
 }

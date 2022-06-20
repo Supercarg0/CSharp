@@ -8,5 +8,5 @@
 
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int mult = num * num;
-Console.WriteLine(num + " -> " + mult);
+int square = num * num;
+Console.WriteLine($"{num} -> {square}");

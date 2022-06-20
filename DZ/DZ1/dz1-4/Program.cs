@@ -1,28 +1,30 @@
 ﻿/*
-4: Напишите программу, которая на вход
-принимает число (N), а на выходе показывает все чётные
-числа от 1 до N.
-5 -> 2, 4
-8 -> 2, 4, 6, 8
+ДЗ/1-4: Напишите программу, которая принимает на
+вход три числа и выдаёт максимальное из этих чисел.
+2, 3, 7 -> 7
+44 5 78 -> 78
+22 3 9 -> 22
 */
 
-Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите третье число: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Найдены следующие чётные числа: ");
-if (number == 0)
+int max = num1;
+if (num2 > max)
 {
-    Console.Write(number);
+    max = num2;
 }
-for (int i = 1; i <= number; i++)
+if (num3 > max)
 {
-    if (i % 2 == 0)
-    {
-        Console.Write(i);
-        if (i != number && i != number - 1)
-        {
-            Console.Write(", ");
-        }
-    }
+    max = num3;
 }
-Console.WriteLine();
+Console.WriteLine($"{num1}, {num2}, {num3} -> {max}");
+
+if (num1 == num2 && num2 == num3)
+{
+    Console.WriteLine("Эти числа являются равными.");
+}
