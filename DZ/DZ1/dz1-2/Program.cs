@@ -15,7 +15,7 @@ if (num1 > num2)
 {
     Console.WriteLine($"a = {num1}; b = {num2} -> max = {num1}");
 }
-if (num2 > num1)
+else if (num2 > num1)
 {
     Console.WriteLine($"a = {num1}; b = {num2} -> max = {num2}");
 }
